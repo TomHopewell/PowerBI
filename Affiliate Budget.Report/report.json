@@ -1,0 +1,75 @@
+{
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.48\",\"type\":2},\"customTheme\":{\"name\":\"ITC6901110749428925.json\",\"version\":\"5.48\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU08",
+            "path": "BaseThemes/CY23SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "ITC6901110749428925.json",
+            "path": "ITC6901110749428925.json",
+            "type": 201
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Affiliate Budget",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter205bdbb89b08aa420f96\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact Affiliate Budget\"}},\"Property\":\"FTDs\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{}}]}}]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4c17cba29110003ca8ed\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":46.995073891625616,\"z\":0,\"width\":943.448275862069,\"height\":375.9605911330049,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim Affiliate.AID\"},{\"queryRef\":\"Dim Date.MonthYear\"},{\"queryRef\":\"Fact Affiliate.Budget FTDS\"},{\"queryRef\":\"Fact Affiliate Budget.Max CPA Average\"},{\"queryRef\":\"Fact Affiliate Budget.Max Budget\"},{\"queryRef\":\"Sum(Fact Affiliate.FTDs)\"},{\"queryRef\":\"Sum(Fact Affiliate.Commission)\"},{\"queryRef\":\"Fact Affiliate.Budget Remaining\"},{\"queryRef\":\"Fact Affiliate.Average CPA\"},{\"queryRef\":\"Fact Affiliate.Budget Remaining %\"},{\"queryRef\":\"Fact Affiliate.Days Remaining\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d1\",\"Entity\":\"Dim Affiliate\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Dim Date\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact Affiliate Budget\",\"Type\":0},{\"Name\":\"f1\",\"Entity\":\"Fact Affiliate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"AID\"},\"Name\":\"Dim Affiliate.AID\",\"NativeReferenceName\":\"AID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MonthYear\"},\"Name\":\"Dim Date.MonthYear\",\"NativeReferenceName\":\"Month Year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Max Budget\"},\"Name\":\"Fact Affiliate Budget.Max Budget\",\"NativeReferenceName\":\"Max Budget\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"FTDs\"}},\"Function\":0},\"Name\":\"Sum(Fact Affiliate.FTDs)\",\"NativeReferenceName\":\"Actual FTDs\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"Commission\"}},\"Function\":0},\"Name\":\"Sum(Fact Affiliate.Commission)\",\"NativeReferenceName\":\"Actual Commission\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"Budget Remaining\"},\"Name\":\"Fact Affiliate.Budget Remaining\",\"NativeReferenceName\":\"Budget Remaining\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"Average CPA\"},\"Name\":\"Fact Affiliate.Average CPA\",\"NativeReferenceName\":\"Average CPA\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"Budget Remaining %\"},\"Name\":\"Fact Affiliate.Budget Remaining %\",\"NativeReferenceName\":\"Budget Remaining %\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"Days Remaining\"},\"Name\":\"Fact Affiliate.Days Remaining\",\"NativeReferenceName\":\"Days Remaining\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Max CPA Average\"},\"Name\":\"Fact Affiliate Budget.Max CPA Average\",\"NativeReferenceName\":\"Max CPA\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"Budget FTDs\"},\"Name\":\"Fact Affiliate.Budget FTDS\",\"NativeReferenceName\":\"Budget FTDs1\"}]},\"columnProperties\":{\"Dim Date.MonthYear\":{\"displayName\":\"Month Year\"},\"Sum(Fact Affiliate.FTDs)\":{\"displayName\":\"Actual FTDs\"},\"Sum(Fact Affiliate.Commission)\":{\"displayName\":\"Actual Commission\"},\"Fact Affiliate Budget.Max CPA Average\":{\"displayName\":\"Max CPA\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"values\":[{\"properties\":{},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"Fact Affiliate.Budget Remaining %\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"fontColorPrimary\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"fontColorSecondary\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}}}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact Affiliate\"}},\"Property\":\"Budget Remaining\"}},\"Right\":{\"Literal\":{\"Value\":\"-100000000D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact Affiliate\"}},\"Property\":\"Budget Remaining\"}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#de6a73'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"Fact Affiliate.Budget Remaining\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact Affiliate\"}},\"Property\":\"Days Remaining\"}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact Affiliate\"}},\"Property\":\"Days Remaining\"}},\"Right\":{\"Literal\":{\"Value\":\"3D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#eb895f'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact Affiliate\"}},\"Property\":\"Days Remaining\"}},\"Right\":{\"Literal\":{\"Value\":\"-100000D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":4,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact Affiliate\"}},\"Property\":\"Days Remaining\"}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#de6a73'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"Fact Affiliate.Days Remaining\"}}],\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"93.9385890419735D\"}}}},\"selector\":{\"metadata\":\"Fact Affiliate.Budget Remaining\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"60.699513982110474D\"}}}},\"selector\":{\"metadata\":\"Sum(Fact Affiliate.FTDs)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"96.15270729758278D\"}}}},\"selector\":{\"metadata\":\"Sum(Fact Affiliate.Commission)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"85.87191489565998D\"}}}},\"selector\":{\"metadata\":\"Fact Affiliate.Budget Remaining %\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"88.30049101123636D\"}}}},\"selector\":{\"metadata\":\"Fact Affiliate Budget.Max Budget\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"87.86699736867885D\"}}}},\"selector\":{\"metadata\":\"Fact Affiliate.Average CPA\"}}],\"grid\":[{\"properties\":{\"rowPadding\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"gridHorizontal\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'None'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter36db55103ccd0bf5f5bf\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Dim Affiliate\"}},\"Property\":\"AID\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false},{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact Affiliate Budget\"}},\"Property\":\"FTDs\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact Affiliate Budget\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"FTDs\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false},{\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact Affiliate\"}},\"Property\":\"Days Remaining\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f1\",\"Entity\":\"Fact Affiliate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"Days Remaining\"}},\"Right\":{\"Literal\":{\"Value\":\"9999L\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 375.96,
+          "width": 943.45,
+          "x": 0.00,
+          "y": 47.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"7f0304b0e370d9ab6f43\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":3000,\"width\":285.51724137931035,\"height\":46.995073891625616,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Affiliate Spend\",\"textStyle\":{\"fontSize\":\"14pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 47.00,
+          "width": 285.52,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"bac6218dfbf9f02555e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":433.5960591133005,\"z\":2000,\"width\":943.448275862069,\"height\":286.4039408866995,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Fact Affiliate.Commission)\"}],\"Category\":[{\"queryRef\":\"Dim Date.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact Affiliate\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Dim Date\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Commission\"}},\"Function\":0},\"Name\":\"Sum(Fact Affiliate.Commission)\",\"NativeReferenceName\":\"Actual Commission\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"},\"Name\":\"Dim Date.Date\",\"NativeReferenceName\":\"Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}}}]},\"columnProperties\":{\"Sum(Fact Affiliate.Commission)\":{\"displayName\":\"Actual Commission\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"start\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}],\"categoryAxis\":[{\"properties\":{\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 286.40,
+          "width": 943.45,
+          "x": 0.00,
+          "y": 433.60,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "ITC6901110749428925.json"
+}

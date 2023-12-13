@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 12,
+            "y": 219
+          },
+          "nodeIndex": "Fact Affiliate",
+          "nodeLineageTag": "122140d0-9e18-4d32-85fc-eba8512c2d77",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 234,
+            "y": 0
+          },
+          "nodeIndex": "Dim Affiliate",
+          "nodeLineageTag": "0335a4e6-efa1-4445-a510-4980f649e410",
+          "size": {
+            "height": 124,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 915,
+            "y": 243
+          },
+          "nodeIndex": "Dim Date",
+          "nodeLineageTag": "c58042f7-2fdd-4016-82da-d428de861174",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 588,
+            "y": 0
+          },
+          "nodeIndex": "Fact Affiliate Budget",
+          "size": {
+            "height": 231,
+            "width": 279
+          },
+          "zIndex": 4
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 1,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [],
+      "name": "Layout 1",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
